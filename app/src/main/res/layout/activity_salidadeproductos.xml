@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".salidadeproductos">
+
+    <LinearLayout
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16sp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/lblseleccion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Seleccione el producto primero"
+            android:textSize="18sp"
+            android:textColor="@color/negro"
+            android:textStyle="bold"
+            />
+
+        <Button
+            android:id="@+id/btnseleccionarproducto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16sp"
+            android:onClick="onClick"
+            android:background="@drawable/borde_et"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+            android:text="Seleccionar producto" />
+
+        <TextView
+            android:id="@+id/lblnombreydisponibilidad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16sp"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="@color/negro"
+            android:textStyle="bold"
+            android:text="Nombre del  producto y disponibilidad" />
+
+        <EditText
+            android:id="@+id/txtcantidadsalida"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16sp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Cantidad de salida"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/btnaceptar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16sp"
+            android:onClick="onClick"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/borde_et"
+            android:text="Aceptar" />
+
+        <Button
+            android:id="@+id/btnbandejasalida"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16sp"
+            android:onClick="onClick"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/borde_et"
+            android:text="bandeja de salida" />
+
+    </LinearLayout>
+</ScrollView>

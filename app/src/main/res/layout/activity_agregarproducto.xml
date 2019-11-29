@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginRight="2dp"
+android:layout_marginLeft="2dp"
+
+    tools:context=".agregarproducto">
+
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardjugar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="5dp"
+        android:layout_gravity="center_vertical"
+        app:cardElevation="3dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:textSize="25dp"
+            android:textColor="@color/negro"
+            android:textStyle="bold"
+            android:text="Agregar Producto" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/lblcodigo"
+                android:layout_width="258dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:editable="false"
+                android:ems="10"
+                android:background="@drawable/borde_et"
+                android:hint="Codigo del producto"
+                android:inputType="textPersonName" />
+
+            <ImageView
+                android:layout_marginTop="8dp"
+                android:id="@+id/imageView"
+                android:layout_width="50dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:onClick="escaner2"
+                app:srcCompat="@drawable/codigo" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/lblnombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:background="@drawable/borde_et"
+            android:hint="Inserte nombre del producto"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/txtvencimiento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:background="@drawable/borde_et"
+            android:hint="Fecha de vencimiento"
+            android:inputType="date" />
+
+
+        <EditText
+            android:id="@+id/lblprecio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:hint="Precio"
+            android:background="@drawable/borde_et"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/lblcantidad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:hint="Cantidad"
+
+            android:background="@drawable/borde_et"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/btnagregar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/borde_et"
+            android:layout_marginBottom="16dp"
+            android:onClick="onClick"
+            android:text="Agregar Producto" />
+
+    </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</ScrollView>

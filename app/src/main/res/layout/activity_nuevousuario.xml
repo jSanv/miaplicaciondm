@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgapps"
+    tools:context=".nuevousuario">
+
+
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardjugar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:layout_margin="12dp"
+        app:cardCornerRadius="5dp"
+
+        android:layout_gravity="center_vertical"
+        app:cardElevation="3dp">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16sp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:text="Bienvenido "
+                android:textColor="@color/negro"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+
+            <EditText
+                android:id="@+id/txtnuevousuario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/borde_et"
+                android:ems="10"
+                android:hint="Nombre Usuario"
+                android:inputType="textPersonName" />
+
+
+            <EditText
+                android:id="@+id/txtnuevacredencial"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/borde_et"
+                android:ems="10"
+                android:hint="Contraseña"
+                android:inputType="textPersonName" />
+
+
+            <EditText
+                android:id="@+id/txtnuevarepetircredencial"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/borde_et"
+                android:ems="10"
+                android:hint="Repetir Contraseña"
+                android:inputType="textPersonName" />
+
+            <Button
+                android:id="@+id/btnnuevoprocesar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/borde_et"
+                android:onClick="onclick"
+                android:text="Aceptar" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</ScrollView>

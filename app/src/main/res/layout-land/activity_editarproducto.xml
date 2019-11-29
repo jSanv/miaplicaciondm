@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".editarproducto">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="16sp"
+        android:layout_marginRight="16sp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+
+            <EditText
+
+                android:id="@+id/txteditcodigo"
+                android:layout_width="285dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/borde_et"
+                android:hint="Codigo del producto"
+                android:inputType="text" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="50dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="13dp"
+                android:background="@drawable/codigo"
+
+                android:onClick="escaner2" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/txteditnombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/borde_et"
+            android:hint="Inserte nombre del producto"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/txteditvencimiento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/borde_et"
+            android:hint="Fecha de vencimiento"
+            android:inputType="date" />
+
+        <EditText
+            android:id="@+id/txteditprecio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/borde_et"
+            android:hint="Precio"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/txteditcantidad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:hint="Cantidad a restar"
+            android:background="@drawable/borde_et"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/btneditagregar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:onClick="onClick"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/borde_et"
+            android:text="Confirmar" />
+
+        <Button
+            android:id="@+id/btnediteliminar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:onClick="onClick"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/borde_et"
+            android:layout_marginBottom="8dp"
+            android:text="Eliminar" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".preferencias">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardjugar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="5dp"
+        android:layout_gravity="center_vertical"
+        app:cardElevation="3dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="16sp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25sp"
+            android:gravity="center"
+            android:textColor="@color/negro"
+            android:textStyle="bold"
+
+            android:text="Configuracion"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16sp"
+            android:gravity="center"
+            android:text="Loguear al inicio?"
+            android:textColor="@color/negro"
+            android:textStyle="bold"
+            android:textSize="14sp" />
+
+        <RadioGroup
+            android:layout_marginLeft="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:layout_marginTop="8dp"
+                android:id="@+id/rdarbircamara"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Si" />
+
+            <RadioButton
+                android:id="@+id/rdabririnserccion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:textSize="14sp" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16sp"
+            android:gravity="center"
+            android:textColor="@color/negro"
+            android:textStyle="bold"
+            android:text="Orden de las listas de productos (Gestionar)" />
+
+        <RadioGroup
+            android:layout_marginLeft="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <RadioButton
+                android:layout_marginTop="8dp"
+                android:id="@+id/rdcolordefecto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Por codigo" />
+
+            <RadioButton
+                android:id="@+id/rdcoloroscuro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Por nombre" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16sp"
+            android:gravity="center"
+            android:textColor="@color/negro"
+            android:textStyle="bold"
+            android:text="Orden de las listas de productos (Mostrar)" />
+
+        <RadioGroup
+            android:layout_marginLeft="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:layout_marginTop="8dp"
+                android:id="@+id/rdporcodigomostrar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Por codigo" />
+
+            <RadioButton
+                android:id="@+id/rdpronombremostrar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Por nombre" />
+
+            <Button
+                android:id="@+id/btncambiarcontra"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16sp"
+                android:onClick="contra"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/borde_et"
+                android:text="Cambiar contraseña" />
+
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnaceptar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8sp"
+            android:onClick="aceptar"
+            android:background="@drawable/borde_et"
+            android:text="Aceptar"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16sp"/>
+
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</ScrollView>

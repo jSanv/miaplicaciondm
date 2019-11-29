@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Agregar">
+
+    <LinearLayout
+        android:layout_marginTop="16sp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="16sp"
+        android:layout_marginRight="16sp"
+
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/negro"
+
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="Escanee codigo de barras, trate de tener un contraste estable para mejor precision o puede ingresar el codigo de forma manual (escrita)"
+
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/btncaptura"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+
+            android:background="@drawable/borde_et"
+
+            android:onClick="escaner2"
+            android:text="Usar Camara" />
+
+        <EditText
+            android:id="@+id/lblcodigo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:layout_marginBottom="8dp"/>
+
+        <Button
+            android:id="@+id/btnagregar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/borde_et"
+
+            android:onClick="onClick"
+            android:text="Agregar codigo" />
+
+        <Button
+            android:id="@+id/btnregresarprincipal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/borde_et"
+            android:layout_marginBottom="16dp"
+            android:onClick="onClick"
+            android:text="Regresar" />
+
+    </LinearLayout>
+
+</ScrollView>
